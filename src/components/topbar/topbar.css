@@ -1,0 +1,13 @@
+.topBar{
+    display: flex;
+    justify-content: space-between;
+    color: red;
+    /* background-color: red; */
+    
+}
+#topbar{
+
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+}

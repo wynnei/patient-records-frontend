@@ -1,0 +1,47 @@
+.welcome{
+  font-size: 50px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+.protect{
+  margin: 20px;
+  font-family: 'DM Serif Display', serif;
+}
+.animated-text-container {
+  background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('../../images/two.jpg');
+    background-blend-mode: multiply;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  
+  .content {
+    text-align: center;
+  }
+  
+  .animated-text {
+    opacity: 0;
+    animation: fadeInUp 2s ease-out forwards;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(400px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
